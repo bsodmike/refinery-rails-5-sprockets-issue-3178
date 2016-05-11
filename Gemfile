@@ -26,6 +26,7 @@ gem 'foundation-rails', '~> 6.1.2.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
+gem 'bower-rails', '~> 0.10.0'
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
@@ -34,16 +35,35 @@ gem 'arel'
 gem 'json'
 gem 'friendly_id'
 
-#gem 'koala', '~> 2.2.0'
-#gem 'dragonfly', '~> 1.0.0'
+# Devise authentication at top-level.
+gem 'devise', github: 'plataformatec/devise', branch: 'master'
+gem 'cancancan', '~> 1.13.0'
+gem 'dragonfly', '~> 1.0.0'
+gem 'honeybadger', '~> 2.0'
+gem 'mailgun_rails'
+gem 'easy_mailchimp', '~> 0.1.0'
+gem 'slack-notifier', '~> 1.5.0'
+
+# RefineryCMS
+#gem 'refinerycms', github: 'refinery/refinerycms', branch: 'feature/rails-5'
+gem 'refinerycms', path: '/Volumes/inertialbox/work/gplink/reference/refinerycms'
+gem 'refinerycms-pages', github: 'refinery/refinerycms', branch: 'feature/rails-5'
+gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'feature/rails-5'
+gem 'routing-filter', github: 'svenfuchs/routing-filter', branch: 'master'
+# TODO: Change source when this will be merged : https://github.com/globalize/globalize/pull/505
+gem 'globalize', github: 'pranik/globalize', branch: 'pr_501_502_503'
+gem 'activemodel-serializers-xml'
+gem 'will_paginate', github: 'nmeylan/will_paginate', branch: 'master'
+
+# OAuth & Facebook Open Graph API
 #gem 'omniauth', '~> 1.3.0'
+#gem 'koala', '~> 2.2.0'
 
 gem 'httparty', '~> 0.13.0'
 gem 'daemons'
 #gem 'delayed_job', '~> 4.1.0'
 #gem 'delayed_job_active_record'
 gem 'whenever',                   require: false
-gem 'bower-rails', '~> 0.10.0'
 
 group :development, :test do
   #gem 'rails-erd'
