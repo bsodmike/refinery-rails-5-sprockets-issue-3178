@@ -140,11 +140,6 @@ vendor/extensions/**/spec/dummy
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
-# dotenv stuff
-.env
-.env.development
-.env.staging
-
 # stupid daemons on dev/date
 bin/log/
 
