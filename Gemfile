@@ -45,8 +45,7 @@ gem 'easy_mailchimp', '~> 0.1.0'
 gem 'slack-notifier', '~> 1.5.0'
 
 # RefineryCMS
-#gem 'refinerycms', github: 'refinery/refinerycms', branch: 'feature/rails-5'
-gem 'refinerycms', path: '/Volumes/inertialbox/work/gplink/reference/refinerycms'
+gem 'refinerycms', github: 'refinery/refinerycms', branch: 'feature/rails-5'
 gem 'refinerycms-pages', github: 'refinery/refinerycms', branch: 'feature/rails-5'
 gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'feature/rails-5'
 gem 'routing-filter', github: 'svenfuchs/routing-filter', branch: 'master'

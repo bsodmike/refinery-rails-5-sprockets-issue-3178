@@ -41,6 +41,11 @@ GIT
   revision: 1fd12c9b3d6572bcb86353139e06f700757d6d38
   branch: feature/rails-5
   specs:
+    refinerycms (3.0.3)
+      refinerycms-core (= 3.0.3)
+      refinerycms-images (= 3.0.3)
+      refinerycms-pages (= 3.0.3)
+      refinerycms-resources (= 3.0.3)
     refinerycms-pages (3.0.3)
       awesome_nested_set (~> 3.0.0)
       babosa (!= 0.3.6)
@@ -58,15 +63,6 @@ GIT
     routing-filter (0.5.1)
       actionpack (>= 4.2, < 5.1)
       activesupport (>= 4.2, < 5.1)
-
-PATH
-  remote: /Volumes/inertialbox/work/gplink/reference/refinerycms
-  specs:
-    refinerycms (3.0.3)
-      refinerycms-core (= 3.0.3)
-      refinerycms-images (= 3.0.3)
-      refinerycms-pages (= 3.0.3)
-      refinerycms-resources (= 3.0.3)
 
 GEM
   remote: https://rubygems.org/
