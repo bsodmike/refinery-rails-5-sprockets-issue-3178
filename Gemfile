@@ -55,6 +55,9 @@ gem 'globalize', github: 'pranik/globalize', branch: 'pr_501_502_503'
 gem 'activemodel-serializers-xml'
 gem 'will_paginate', github: 'nmeylan/will_paginate', branch: 'master'
 
+## NOTE does this break?
+gem 'refinerycms-wymeditor', '~> 1.1.0'
+
 # OAuth & Facebook Open Graph API
 #gem 'omniauth', '~> 1.3.0'
 #gem 'koala', '~> 2.2.0'
