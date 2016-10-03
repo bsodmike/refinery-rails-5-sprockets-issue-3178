@@ -67,7 +67,9 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "RailsApp_#{Rails.env}"
   if config.respond_to?(:action_mailer)
-    config.action_mailer.perform_caching = false
+  if config.respond_to?(:action_mailer)
+      config.action_mailer.perform_caching = false
+  end
   end
 
   # Ignore bad email addresses and do not raise email delivery errors.

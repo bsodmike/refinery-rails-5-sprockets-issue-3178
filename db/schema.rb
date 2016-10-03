@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -23,10 +22,9 @@ ActiveRecord::Schema.define(version: 20161003071603) do
     t.datetime "updated_at",        null: false
     t.string   "image_alt"
     t.string   "image_title"
+    t.index ["locale"], name: "index_refinery_image_translations_on_locale", using: :btree
+    t.index ["refinery_image_id"], name: "index_refinery_image_translations_on_refinery_image_id", using: :btree
   end
-
-  add_index "refinery_image_translations", ["locale"], name: "index_refinery_image_translations_on_locale", using: :btree
-  add_index "refinery_image_translations", ["refinery_image_id"], name: "index_refinery_image_translations_on_refinery_image_id", using: :btree
 
   create_table "refinery_images", force: :cascade do |t|
     t.string   "image_mime_type"
@@ -47,10 +45,9 @@ ActiveRecord::Schema.define(version: 20161003071603) do
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
     t.text     "body"
+    t.index ["locale"], name: "index_refinery_page_part_translations_on_locale", using: :btree
+    t.index ["refinery_page_part_id"], name: "index_refinery_page_part_translations_on_refinery_page_part_id", using: :btree
   end
-
-  add_index "refinery_page_part_translations", ["locale"], name: "index_refinery_page_part_translations_on_locale", using: :btree
-  add_index "refinery_page_part_translations", ["refinery_page_part_id"], name: "index_refinery_page_part_translations_on_refinery_page_part_id", using: :btree
 
   create_table "refinery_page_parts", force: :cascade do |t|
     t.integer  "refinery_page_id"
@@ -60,10 +57,9 @@ ActiveRecord::Schema.define(version: 20161003071603) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "title"
+    t.index ["id"], name: "index_refinery_page_parts_on_id", using: :btree
+    t.index ["refinery_page_id"], name: "index_refinery_page_parts_on_refinery_page_id", using: :btree
   end
-
-  add_index "refinery_page_parts", ["id"], name: "index_refinery_page_parts_on_id", using: :btree
-  add_index "refinery_page_parts", ["refinery_page_id"], name: "index_refinery_page_parts_on_refinery_page_id", using: :btree
 
   create_table "refinery_page_translations", force: :cascade do |t|
     t.integer  "refinery_page_id", null: false
@@ -74,10 +70,9 @@ ActiveRecord::Schema.define(version: 20161003071603) do
     t.string   "custom_slug"
     t.string   "menu_title"
     t.string   "slug"
+    t.index ["locale"], name: "index_refinery_page_translations_on_locale", using: :btree
+    t.index ["refinery_page_id"], name: "index_refinery_page_translations_on_refinery_page_id", using: :btree
   end
-
-  add_index "refinery_page_translations", ["locale"], name: "index_refinery_page_translations_on_locale", using: :btree
-  add_index "refinery_page_translations", ["refinery_page_id"], name: "index_refinery_page_translations_on_refinery_page_id", using: :btree
 
   create_table "refinery_pages", force: :cascade do |t|
     t.integer  "parent_id"
@@ -97,13 +92,12 @@ ActiveRecord::Schema.define(version: 20161003071603) do
     t.string   "layout_template"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["depth"], name: "index_refinery_pages_on_depth", using: :btree
+    t.index ["id"], name: "index_refinery_pages_on_id", using: :btree
+    t.index ["lft"], name: "index_refinery_pages_on_lft", using: :btree
+    t.index ["parent_id"], name: "index_refinery_pages_on_parent_id", using: :btree
+    t.index ["rgt"], name: "index_refinery_pages_on_rgt", using: :btree
   end
-
-  add_index "refinery_pages", ["depth"], name: "index_refinery_pages_on_depth", using: :btree
-  add_index "refinery_pages", ["id"], name: "index_refinery_pages_on_id", using: :btree
-  add_index "refinery_pages", ["lft"], name: "index_refinery_pages_on_lft", using: :btree
-  add_index "refinery_pages", ["parent_id"], name: "index_refinery_pages_on_parent_id", using: :btree
-  add_index "refinery_pages", ["rgt"], name: "index_refinery_pages_on_rgt", using: :btree
 
   create_table "refinery_resource_translations", force: :cascade do |t|
     t.integer  "refinery_resource_id", null: false
@@ -111,10 +105,9 @@ ActiveRecord::Schema.define(version: 20161003071603) do
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
     t.string   "resource_title"
+    t.index ["locale"], name: "index_refinery_resource_translations_on_locale", using: :btree
+    t.index ["refinery_resource_id"], name: "index_refinery_resource_translations_on_refinery_resource_id", using: :btree
   end
-
-  add_index "refinery_resource_translations", ["locale"], name: "index_refinery_resource_translations_on_locale", using: :btree
-  add_index "refinery_resource_translations", ["refinery_resource_id"], name: "index_refinery_resource_translations_on_refinery_resource_id", using: :btree
 
   create_table "refinery_resources", force: :cascade do |t|
     t.string   "file_mime_type"
@@ -133,9 +126,8 @@ ActiveRecord::Schema.define(version: 20161003071603) do
     t.text     "meta_description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["id"], name: "index_seo_meta_on_id", using: :btree
+    t.index ["seo_meta_id", "seo_meta_type"], name: "id_type_index_on_seo_meta", using: :btree
   end
-
-  add_index "seo_meta", ["id"], name: "index_seo_meta_on_id", using: :btree
-  add_index "seo_meta", ["seo_meta_id", "seo_meta_type"], name: "id_type_index_on_seo_meta", using: :btree
 
 end

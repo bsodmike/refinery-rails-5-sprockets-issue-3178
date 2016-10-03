@@ -74,5 +74,5 @@ Refinery::Pages.configure do |config|
   # You can add new HTML attributes not already supported by Loofah::HTML5::WhiteList::ALLOWED_ATTRIBUTES
   # For more information on whitelist see ALLOWED_ATTRIBUTES 
   # (https://github.com/flavorjones/loofah/blob/v2.0.3/lib/loofah/html5/whitelist.rb#L152)
-  # config.add_whitelist_attributes = ["kind", "srclang", "placeholder", "controls"]
+  # config.add_whitelist_attributes = ["kind", "srclang", "placeholder", "controls", "required"]
 end
