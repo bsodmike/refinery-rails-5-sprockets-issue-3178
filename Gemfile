@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'bundler', '~> 1.12.0'
-gem 'rails', '>= 5.0.0.beta3', '< 5.1'
+gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'pg', '~> 0.18'
 
 gem 'unicorn'
@@ -16,7 +16,7 @@ gem 'dotenv-rails'
 #
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2'
 gem 'therubyracer', platforms: :ruby
 gem 'sprockets'
 gem 'sprockets-es6'
@@ -45,15 +45,13 @@ gem 'easy_mailchimp', '~> 0.1.0'
 gem 'slack-notifier', '~> 1.5.0'
 
 # RefineryCMS
-#gem 'refinerycms', github: 'refinery/refinerycms', branch: 'feature/rails-5'
-gem 'refinerycms', path: '/Volumes/inertialbox/work/gplink/reference/refinerycms'
+gem 'refinerycms', github: 'refinery/refinerycms', branch: 'feature/rails-5'
 gem 'refinerycms-pages', github: 'refinery/refinerycms', branch: 'feature/rails-5'
 gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'feature/rails-5'
 gem 'routing-filter', github: 'svenfuchs/routing-filter', branch: 'master'
-# TODO: Change source when this will be merged : https://github.com/globalize/globalize/pull/505
-gem 'globalize', github: 'pranik/globalize', branch: 'pr_501_502_503'
-gem 'activemodel-serializers-xml'
+gem 'globalize', github: 'globalize/globalize', branch: 'master'
 gem 'will_paginate', github: 'nmeylan/will_paginate', branch: 'master'
+gem 'activemodel-serializers-xml'
 
 ## NOTE does this break?
 gem 'refinerycms-wymeditor', '~> 1.1.0'
@@ -72,6 +70,7 @@ group :development, :test do
   #gem 'rails-erd'
   gem 'pry-rails'
   gem 'pry-byebug'
+  gem 'byebug', platform: :mri
   gem 'pry-stack_explorer'
 
   gem 'rspec-rails'
@@ -90,7 +89,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'puma'
+  gem 'puma', '~> 3.0'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 3.0'
@@ -100,7 +99,9 @@ group :development do
   gem 'annotate'
   gem 'rubocop'
   gem 'rails_best_practices'
-  gem 'quiet_assets'
+
+  # Has Rails 3.1 as a dependency.
+  #gem 'quiet_assets'
   gem 'letter_opener'
 
   gem 'rack-livereload'
