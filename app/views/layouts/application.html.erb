@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsApp</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+
+    <!-- Sprockets is unable to render this template if Refinery is installed -->
+    <%= stylesheet_link_tag    'frontend/application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
