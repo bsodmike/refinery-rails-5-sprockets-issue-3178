@@ -16,6 +16,14 @@ GIT
     will_paginate (3.1.0)
 
 GIT
+  remote: git://github.com/parndt/refinerycms-wymeditor.git
+  revision: 7ba5e79d22a75f02604fde7a648e7ef214be35d1
+  branch: bugfix/rails-5
+  specs:
+    refinerycms-wymeditor (1.0.7)
+      refinerycms-core (>= 3.0.0, < 5.0)
+
+GIT
   remote: git://github.com/plataformatec/devise.git
   revision: 88724e10adaf9ffd1d8dbfbaadda2b9d40de756a
   branch: master
@@ -144,9 +152,9 @@ GEM
     annotate (2.7.1)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
-    arel (7.1.2)
+    arel (7.1.4)
     ast (2.3.0)
-    autoprefixer-rails (6.5.0.1)
+    autoprefixer-rails (6.5.1)
       execjs
     awesome_nested_set (3.1.1)
       activerecord (>= 4.0.0, < 5.1)
@@ -328,9 +336,8 @@ GEM
     nenv (0.3.0)
     netrc (0.11.0)
     nio4r (1.2.1)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
@@ -338,7 +345,6 @@ GEM
     parser (2.3.1.4)
       ast (~> 2.2)
     pg (0.19.0)
-    pkg-config (1.1.7)
     poltergeist (1.10.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -408,8 +414,6 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     ref (2.0.0)
-    refinerycms-wymeditor (1.1.0)
-      refinerycms-core (>= 3.0.0, < 5.0)
     request_store (1.3.1)
     require_all (1.3.3)
     responders (2.3.0)
@@ -599,7 +603,7 @@ DEPENDENCIES
   refinerycms!
   refinerycms-i18n!
   refinerycms-pages!
-  refinerycms-wymeditor (~> 1.1.0)
+  refinerycms-wymeditor!
   routing-filter!
   rspec-activejob (~> 0.6.0)
   rspec-activemodel-mocks
