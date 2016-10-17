@@ -1,29 +1,4 @@
 GIT
-  remote: git://github.com/globalize/globalize.git
-  revision: d4aa48ade91d5917a648a6f9cf1f824a537127e4
-  branch: master
-  specs:
-    globalize (5.1.0)
-      activemodel (>= 4.2, < 5.1)
-      activerecord (>= 4.2, < 5.1)
-      request_store (~> 1.0)
-
-GIT
-  remote: git://github.com/nmeylan/will_paginate.git
-  revision: e11cae7b2d9801719b9baa5db1588793809b8c7e
-  branch: master
-  specs:
-    will_paginate (3.1.0)
-
-GIT
-  remote: git://github.com/parndt/refinerycms-wymeditor.git
-  revision: 7ba5e79d22a75f02604fde7a648e7ef214be35d1
-  branch: bugfix/rails-5
-  specs:
-    refinerycms-wymeditor (1.0.7)
-      refinerycms-core (>= 3.0.0, < 5.0)
-
-GIT
   remote: git://github.com/plataformatec/devise.git
   revision: 88724e10adaf9ffd1d8dbfbaadda2b9d40de756a
   branch: master
@@ -34,73 +9,6 @@ GIT
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
-
-GIT
-  remote: git://github.com/refinery/refinerycms-i18n.git
-  revision: 727bdc58c3078caa1248d9dd71da283d4f72a369
-  branch: feature/rails-5
-  specs:
-    refinerycms-i18n (3.0.1)
-      rails-i18n (~> 5.0.0)
-      routing-filter (>= 0.4.0)
-
-GIT
-  remote: git://github.com/refinery/refinerycms.git
-  revision: 53635cc9c4d0042b4503d835d8806b1db9ff7ace
-  branch: feature/rails-5
-  specs:
-    refinerycms (4.0.0.dev)
-      refinerycms-core (= 4.0.0.dev)
-      refinerycms-images (= 4.0.0.dev)
-      refinerycms-pages (= 4.0.0.dev)
-      refinerycms-resources (= 4.0.0.dev)
-    refinerycms-core (4.0.0.dev)
-      actionmailer (>= 5.0.0, < 5.1)
-      actionpack (>= 5.0.0, < 5.1)
-      activerecord (>= 5.0.0, < 5.1)
-      awesome_nested_set (~> 3.0, >= 3.0.0)
-      bootstrap (~> 4.0.0.alpha3)
-      coffee-rails (~> 4.0, >= 4.0.0)
-      decorators (~> 2.0.0)
-      font-awesome-sass (>= 4.3.0, < 5.0)
-      jquery-rails (>= 2.3.0)
-      jquery-ui-rails (~> 5.0.0)
-      railties (>= 5.0.0, < 5.1)
-      refinerycms-i18n (~> 3.0, >= 3.0.0)
-      sass-rails (>= 4.0, < 5.1)
-      truncate_html (~> 0.9)
-      will_paginate (~> 3.1.0)
-      zilch-authorisation
-    refinerycms-images (4.0.0.dev)
-      activemodel-serializers-xml (~> 1.0.1)
-      dragonfly (~> 1.0.0)
-      globalize (>= 5.1.0, < 5.2)
-      refinerycms-core (= 4.0.0.dev)
-    refinerycms-pages (4.0.0.dev)
-      activemodel-serializers-xml (~> 1.0.1)
-      awesome_nested_set (~> 3.1.0)
-      babosa (!= 0.3.6)
-      diffy (~> 3.1.0)
-      friendly_id (>= 5.1.0, < 5.3)
-      globalize (>= 5.1.0, < 5.2)
-      refinerycms-core (= 4.0.0.dev)
-      seo_meta (~> 2.0.0.rc.1)
-      speakingurl-rails (~> 8.0.0)
-    refinerycms-resources (4.0.0.dev)
-      activemodel-serializers-xml (~> 1.0.1)
-      acts_as_indexed (~> 0.8.0)
-      dragonfly (~> 1.0.0)
-      globalize (>= 5.1.0, < 5.2)
-      refinerycms-core (= 4.0.0.dev)
-
-GIT
-  remote: git://github.com/svenfuchs/routing-filter.git
-  revision: e5de2c9d1db81f8ed14bb29922f21f752fff0a81
-  branch: master
-  specs:
-    routing-filter (0.6.0)
-      actionpack (>= 4.2, < 5.1)
-      activesupport (>= 4.2, < 5.1)
 
 GEM
   remote: https://rubygems.org/
@@ -133,11 +41,6 @@ GEM
       globalid (>= 0.3.6)
     activemodel (5.0.0.1)
       activesupport (= 5.0.0.1)
-    activemodel-serializers-xml (1.0.1)
-      activemodel (> 5.x)
-      activerecord (> 5.x)
-      activesupport (> 5.x)
-      builder (~> 3.1)
     activerecord (5.0.0.1)
       activemodel (= 5.0.0.1)
       activesupport (= 5.0.0.1)
@@ -147,23 +50,17 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    acts_as_indexed (0.8.3)
     addressable (2.4.0)
     annotate (2.7.1)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
     arel (7.1.4)
     ast (2.3.0)
-    autoprefixer-rails (6.5.1)
-      execjs
-    awesome_nested_set (3.1.1)
-      activerecord (>= 4.0.0, < 5.1)
     awesome_print (1.7.0)
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
-    babosa (1.0.2)
     bcrypt (3.1.11)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
@@ -175,9 +72,6 @@ GEM
       bourbon (>= 5.0.0.beta.6)
       sass (~> 3.4)
       thor (~> 0.19)
-    bootstrap (4.0.0.alpha4)
-      autoprefixer-rails (>= 6.0.3)
-      sass (>= 3.4.19)
     bourbon (5.0.0.beta.6)
       sass (~> 3.4.22)
       thor (~> 0.19.1)
@@ -216,10 +110,7 @@ GEM
     daemons (1.2.4)
     database_cleaner (1.5.3)
     debug_inspector (0.0.2)
-    decorators (2.0.2)
-      railties (>= 4.0.0, < 5.1)
     diff-lcs (1.2.5)
-    diffy (3.1.0)
     docile (1.1.5)
     domain_name (0.5.20160826)
       unf (>= 0.0.5, < 1.0.0)
@@ -250,8 +141,6 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffaker (2.2.0)
     ffi (1.9.14)
-    font-awesome-sass (4.6.2)
-      sass (>= 3.2)
     foreman (0.82.0)
       thor (~> 0.19.1)
     formatador (0.2.5)
@@ -388,9 +277,6 @@ GEM
       nokogiri (~> 1.6.0)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails-i18n (5.0.1)
-      i18n (~> 0.7)
-      railties (~> 5.0)
     rails_best_practices (1.17.0)
       activesupport
       code_analyzer (>= 0.4.3)
@@ -414,7 +300,6 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     ref (2.0.0)
-    request_store (1.3.1)
     require_all (1.3.3)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
@@ -470,8 +355,6 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    seo_meta (2.0.0.rc.1)
-      railties (>= 3.0.0)
     sexp_processor (4.7.0)
     shellany (0.0.1)
     shoulda-matchers (3.0.1)
@@ -485,8 +368,6 @@ GEM
       simplecov (>= 0.4.1)
     slack-notifier (1.5.1)
     slop (3.6.0)
-    speakingurl-rails (8.0.2)
-      railties (>= 3.1)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -506,7 +387,6 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
-    truncate_html (0.9.3)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (3.0.2)
@@ -538,13 +418,11 @@ GEM
       chronic (>= 0.6.3)
     xpath (2.0.0)
       nokogiri (~> 1.3)
-    zilch-authorisation (0.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activemodel-serializers-xml
   annotate
   arel
   awesome_print
@@ -573,7 +451,6 @@ DEPENDENCIES
   foundation-rails (~> 6.1.2.0)
   friendly_id
   fuubar
-  globalize!
   guard
   guard-livereload
   guard-rspec
@@ -600,11 +477,6 @@ DEPENDENCIES
   rb-fchange
   rb-fsevent
   rb-inotify
-  refinerycms!
-  refinerycms-i18n!
-  refinerycms-pages!
-  refinerycms-wymeditor!
-  routing-filter!
   rspec-activejob (~> 0.6.0)
   rspec-activemodel-mocks
   rspec-collection_matchers
@@ -616,8 +488,9 @@ DEPENDENCIES
   simplecov
   simplecov-rcov
   slack-notifier (~> 1.5.0)
-  sprockets
+  sprockets (~> 3.7.0)
   sprockets-es6
+  sprockets-rails (~> 3.2.0)
   terminal-notifier
   terminal-notifier-guard
   therubyracer
@@ -627,7 +500,6 @@ DEPENDENCIES
   web-console (~> 3.0)
   webmock
   whenever
-  will_paginate!
 
 BUNDLED WITH
    1.12.3

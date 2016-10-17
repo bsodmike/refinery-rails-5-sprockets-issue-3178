@@ -18,7 +18,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'therubyracer', platforms: :ruby
-gem 'sprockets'
+gem 'sprockets', '~> 3.7.0'
 gem 'sprockets-es6'
 gem 'foundation-rails', '~> 6.1.2.0'
 
@@ -45,16 +45,18 @@ gem 'easy_mailchimp', '~> 0.1.0'
 gem 'slack-notifier', '~> 1.5.0'
 
 # RefineryCMS
-gem 'refinerycms', github: 'refinery/refinerycms', branch: 'feature/rails-5'
-gem 'refinerycms-pages', github: 'refinery/refinerycms', branch: 'feature/rails-5'
-gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'feature/rails-5'
-gem 'routing-filter', github: 'svenfuchs/routing-filter', branch: 'master'
-gem 'globalize', github: 'globalize/globalize', branch: 'master'
-gem 'will_paginate', github: 'nmeylan/will_paginate', branch: 'master'
-gem 'activemodel-serializers-xml'
 
-## NOTE does this break?
-gem 'refinerycms-wymeditor', github: 'parndt/refinerycms-wymeditor', branch: 'bugfix/rails-5'
+# Refinery Removed to check if Sprockets works at the top-level by default
+gem 'sprockets-rails', '~> 3.2.0'
+
+#gem 'refinerycms', github: 'refinery/refinerycms', branch: 'feature/rails-5'
+#gem 'refinerycms-pages', github: 'refinery/refinerycms', branch: 'feature/rails-5'
+#gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'feature/rails-5'
+#gem 'routing-filter', github: 'svenfuchs/routing-filter', branch: 'master'
+#gem 'globalize', github: 'globalize/globalize', branch: 'master'
+#gem 'will_paginate', github: 'nmeylan/will_paginate', branch: 'master'
+#gem 'activemodel-serializers-xml'
+#gem 'refinerycms-wymeditor', github: 'parndt/refinerycms-wymeditor', branch: 'bugfix/rails-5'
 
 # OAuth & Facebook Open Graph API
 #gem 'omniauth', '~> 1.3.0'
