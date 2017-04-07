@@ -19,7 +19,7 @@ Refinery::Resources.configure do |config|
 
   # Configure Dragonfly
   # config.dragonfly_verify_urls = true
-  # config.dragonfly_secret = "9ec99f9827f672aad662e0ecd1337e1bb0889e5ee50ee1c2"
+  # config.dragonfly_secret = "2863638845c34a8cce6a7e59ee4e1d11fa956705be985585"
   # config.dragonfly_url_format = "/system/resources/:job/:basename.:ext"
   # config.dragonfly_url_host = ""
   # config.datastore_root_path = "/Volumes/inertialbox/hack/refinery-rails-5-sprockets-issue-3178/public/system/refinery/resources"

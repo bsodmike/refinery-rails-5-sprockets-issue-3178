@@ -17,12 +17,16 @@ Rails.application.configure do
     config.action_controller.perform_caching = true
   if config.respond_to?(:action_mailer)
   if config.respond_to?(:action_mailer)
-        config.action_mailer.perform_caching = false
+  if config.respond_to?(:action_mailer)
+  if config.respond_to?(:action_mailer)
+            config.action_mailer.perform_caching = false
 
-        config.cache_store = :memory_store
-        config.public_file_server.headers = {
-          'Cache-Control' => 'public, max-age=172800'
-        }
+            config.cache_store = :memory_store
+            config.public_file_server.headers = {
+              'Cache-Control' => 'public, max-age=172800'
+            }
+  end
+  end
   end
   end
   else

@@ -29,7 +29,11 @@ Rails.application.configure do
   config.action_controller.allow_forgery_protection = false
   if config.respond_to?(:action_mailer)
   if config.respond_to?(:action_mailer)
-      config.action_mailer.perform_caching = false
+  if config.respond_to?(:action_mailer)
+  if config.respond_to?(:action_mailer)
+          config.action_mailer.perform_caching = false
+  end
+  end
   end
   end
 

@@ -22,7 +22,7 @@ default: &default
   password: password
   host: localhost
 
-development:
+development: &development
   <<: *default
   database: <%= ENV['APP_NAME'] %>_development
 
@@ -81,9 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
-  port: <%= ENV['RDS_PORT'] %>
-
+  database: refinery_development
