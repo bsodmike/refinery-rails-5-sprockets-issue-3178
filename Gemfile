@@ -54,7 +54,7 @@ gem 'will_paginate', github: 'nmeylan/will_paginate', branch: 'master'
 gem 'activemodel-serializers-xml'
 
 ## NOTE does this break?
-gem 'refinerycms-wymeditor', github: 'parndt/refinerycms-wymeditor', branch: 'bugfix/rails-5'
+gem 'refinerycms-wymeditor', github: 'parndt/refinerycms-wymeditor', branch: 'feature/rails-5'
 
 # OAuth & Facebook Open Graph API
 #gem 'omniauth', '~> 1.3.0'
