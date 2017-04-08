@@ -10,10 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161003071603) do
+ActiveRecord::Schema.define(version: 20170407235625) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "refinery_authentication_devise_roles", force: :cascade do |t|
+    t.string "title"
+  end
+
+  create_table "refinery_authentication_devise_roles_users", id: false, force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "role_id"
+    t.index ["role_id", "user_id"], name: "refinery_roles_users_role_id_user_id", using: :btree
+    t.index ["user_id", "role_id"], name: "refinery_roles_users_user_id_role_id", using: :btree
+  end
+
+  create_table "refinery_authentication_devise_user_plugins", force: :cascade do |t|
+    t.integer "user_id"
+    t.string  "name"
+    t.integer "position"
+    t.index ["name"], name: "index_refinery_authentication_devise_user_plugins_on_name", using: :btree
+    t.index ["user_id", "name"], name: "refinery_user_plugins_user_id_name", unique: true, using: :btree
+  end
+
+  create_table "refinery_authentication_devise_users", force: :cascade do |t|
+    t.string   "username",               null: false
+    t.string   "email",                  null: false
+    t.string   "encrypted_password",     null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.integer  "sign_in_count"
+    t.datetime "remember_created_at"
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "slug"
+    t.string   "full_name"
+    t.index ["id"], name: "index_refinery_authentication_devise_users_on_id", using: :btree
+    t.index ["slug"], name: "index_refinery_authentication_devise_users_on_slug", using: :btree
+  end
 
   create_table "refinery_image_translations", force: :cascade do |t|
     t.integer  "refinery_image_id", null: false

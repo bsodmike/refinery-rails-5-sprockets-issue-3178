@@ -46,7 +46,8 @@ gem 'slack-notifier', '~> 1.5.0'
 
 # RefineryCMS
 gem 'refinerycms', github: 'refinery/refinerycms', branch: 'feature/rails-5'
-gem 'refinerycms-pages', github: 'refinery/refinerycms', branch: 'feature/rails-5'
+gem 'refinerycms-authentication-devise', github: 'bsodmike/refinerycms-authentication-devise', branch: 'feature/rails5'
+gem 'refinerycms-pages', github: 'bsodmike/refinerycms', branch: 'feature/rails-5'
 gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'feature/rails-5'
 gem 'routing-filter', github: 'svenfuchs/routing-filter', branch: 'master'
 gem 'globalize', github: 'globalize/globalize', branch: 'master'

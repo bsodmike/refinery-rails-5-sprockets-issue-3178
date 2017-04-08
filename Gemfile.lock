@@ -1,9 +1,64 @@
 GIT
+  remote: git://github.com/bsodmike/refinerycms-authentication-devise.git
+  revision: be574af12ad501e7995313a2d220c7a7c974c277
+  branch: feature/rails5
+  specs:
+    refinerycms-authentication-devise (1.0.4)
+      actionmailer (~> 5.0.0.0)
+      devise (~> 4.2.0)
+      friendly_id (~> 5.2.0)
+      refinerycms-core (>= 3.0.0, < 5.0)
+
+GIT
+  remote: git://github.com/bsodmike/refinerycms.git
+  revision: 157d940b427b7bb172a0de8725b362c8a0ff92f6
+  branch: feature/rails-5
+  specs:
+    refinerycms-core (4.0.0.dev)
+      actionmailer (>= 5.0.0, < 5.1)
+      actionpack (>= 5.0.0, < 5.1)
+      activerecord (>= 5.0.0, < 5.1)
+      awesome_nested_set (~> 3.0, >= 3.0.0)
+      bootstrap (~> 4.0.0.alpha5)
+      coffee-rails (~> 4.0, >= 4.0.0)
+      decorators (~> 2.0.0)
+      font-awesome-sass (>= 4.3.0, < 5.0)
+      jquery-rails (>= 2.3.0)
+      jquery-ui-rails (~> 5.0.0)
+      railties (>= 5.0.0, < 5.1)
+      refinerycms-i18n (~> 3.0, >= 3.0.0)
+      sass-rails (>= 4.0, < 5.1)
+      truncate_html (~> 0.9)
+      will_paginate (~> 3.1.0)
+      zilch-authorisation
+    refinerycms-images (4.0.0.dev)
+      activemodel-serializers-xml (~> 1.0.1)
+      dragonfly (~> 1.0.0)
+      globalize (>= 5.1.0.beta1, < 5.2)
+      refinerycms-core (= 4.0.0.dev)
+    refinerycms-pages (4.0.0.dev)
+      activemodel-serializers-xml (~> 1.0.1)
+      awesome_nested_set (~> 3.1.0)
+      babosa (!= 0.3.6)
+      diffy (~> 3.1.0)
+      friendly_id (>= 5.1.0, < 5.3)
+      globalize (>= 5.1.0.beta1, < 5.2)
+      refinerycms-core (= 4.0.0.dev)
+      seo_meta (~> 2.0.0.rc.1)
+      speakingurl-rails (~> 8.0.0)
+    refinerycms-resources (4.0.0.dev)
+      activemodel-serializers-xml (~> 1.0.1)
+      acts_as_indexed (~> 0.8.0)
+      dragonfly (~> 1.0.0)
+      globalize (>= 5.1.0.beta1, < 5.2)
+      refinerycms-core (= 4.0.0.dev)
+
+GIT
   remote: git://github.com/globalize/globalize.git
-  revision: d4aa48ade91d5917a648a6f9cf1f824a537127e4
+  revision: 8daef404a33fce7d8e6bf444451335e6f4d828d2
   branch: master
   specs:
-    globalize (5.1.0)
+    globalize (5.1.0.beta1)
       activemodel (>= 4.2, < 5.1)
       activerecord (>= 4.2, < 5.1)
       request_store (~> 1.0)
@@ -25,10 +80,10 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: 88724e10adaf9ffd1d8dbfbaadda2b9d40de756a
+  revision: 7d3d6fb3f04caea95e343956a88654f753b45af4
   branch: master
   specs:
-    devise (4.2.0)
+    devise (4.2.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.1)
@@ -46,7 +101,7 @@ GIT
 
 GIT
   remote: git://github.com/refinery/refinerycms.git
-  revision: 53635cc9c4d0042b4503d835d8806b1db9ff7ace
+  revision: f8a1152f9d25847350792a2e0473070d0049d776
   branch: feature/rails-5
   specs:
     refinerycms (4.0.0.dev)
@@ -54,44 +109,6 @@ GIT
       refinerycms-images (= 4.0.0.dev)
       refinerycms-pages (= 4.0.0.dev)
       refinerycms-resources (= 4.0.0.dev)
-    refinerycms-core (4.0.0.dev)
-      actionmailer (>= 5.0.0, < 5.1)
-      actionpack (>= 5.0.0, < 5.1)
-      activerecord (>= 5.0.0, < 5.1)
-      awesome_nested_set (~> 3.0, >= 3.0.0)
-      bootstrap (~> 4.0.0.alpha3)
-      coffee-rails (~> 4.0, >= 4.0.0)
-      decorators (~> 2.0.0)
-      font-awesome-sass (>= 4.3.0, < 5.0)
-      jquery-rails (>= 2.3.0)
-      jquery-ui-rails (~> 5.0.0)
-      railties (>= 5.0.0, < 5.1)
-      refinerycms-i18n (~> 3.0, >= 3.0.0)
-      sass-rails (>= 4.0, < 5.1)
-      truncate_html (~> 0.9)
-      will_paginate (~> 3.1.0)
-      zilch-authorisation
-    refinerycms-images (4.0.0.dev)
-      activemodel-serializers-xml (~> 1.0.1)
-      dragonfly (~> 1.0.0)
-      globalize (>= 5.1.0, < 5.2)
-      refinerycms-core (= 4.0.0.dev)
-    refinerycms-pages (4.0.0.dev)
-      activemodel-serializers-xml (~> 1.0.1)
-      awesome_nested_set (~> 3.1.0)
-      babosa (!= 0.3.6)
-      diffy (~> 3.1.0)
-      friendly_id (>= 5.1.0, < 5.3)
-      globalize (>= 5.1.0, < 5.2)
-      refinerycms-core (= 4.0.0.dev)
-      seo_meta (~> 2.0.0.rc.1)
-      speakingurl-rails (~> 8.0.0)
-    refinerycms-resources (4.0.0.dev)
-      activemodel-serializers-xml (~> 1.0.1)
-      acts_as_indexed (~> 0.8.0)
-      dragonfly (~> 1.0.0)
-      globalize (>= 5.1.0, < 5.2)
-      refinerycms-core (= 4.0.0.dev)
 
 GIT
   remote: git://github.com/svenfuchs/routing-filter.git
@@ -148,7 +165,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     acts_as_indexed (0.8.3)
-    addressable (2.4.0)
+    addressable (2.5.1)
+      public_suffix (~> 2.0, >= 2.0.2)
     annotate (2.7.1)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
@@ -258,7 +276,7 @@ GEM
     foundation-rails (6.1.2.0)
       railties (>= 3.1.0)
       sass (>= 3.3.0, < 3.5)
-    friendly_id (5.1.0)
+    friendly_id (5.2.0)
       activerecord (>= 4.0.0)
     fuubar (2.2.0)
       rspec-core (~> 3.0)
@@ -365,6 +383,7 @@ GEM
     pry-stack_explorer (0.4.9.2)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
+    public_suffix (2.0.5)
     puma (3.6.0)
     rack (2.0.1)
     rack-livereload (0.3.16)
@@ -414,7 +433,7 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     ref (2.0.0)
-    request_store (1.3.1)
+    request_store (1.3.2)
     require_all (1.3.3)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
@@ -470,7 +489,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    seo_meta (2.0.0.rc.1)
+    seo_meta (2.0.0)
       railties (>= 3.0.0)
     sexp_processor (4.7.0)
     shellany (0.0.1)
@@ -520,7 +539,7 @@ GEM
       raindrops (~> 0.7)
     uniform_notifier (1.10.0)
     vcr (3.0.3)
-    warden (1.2.6)
+    warden (1.2.7)
       rack (>= 1.0)
     web-console (3.3.1)
       actionview (>= 5.0)
@@ -601,6 +620,7 @@ DEPENDENCIES
   rb-fsevent
   rb-inotify
   refinerycms!
+  refinerycms-authentication-devise!
   refinerycms-i18n!
   refinerycms-pages!
   refinerycms-wymeditor!
